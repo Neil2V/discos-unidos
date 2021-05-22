@@ -11,6 +11,7 @@ export const createDisco : RequestHandler = async (req, res) => {
 
     const disco = new Disco(req.body);
     const savedDisco = await disco.save();
+    console.log(savedDisco);
     res.json(savedDisco)
 }
 
