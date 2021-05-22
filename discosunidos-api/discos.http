@@ -1,0 +1,29 @@
+
+@api = http://localhost:5000
+
+GET {{api}}/discos
+
+
+###
+GET {{api}}/discos/60a188a96aec85047cfec659
+
+###
+POST {{api}}/discos
+Content-Type: application/json
+
+{
+    "title": "Titulo",
+    "artista": "Neil",
+    "imagePath" : "oqu3ohkashjkdgjsagdkaslkd"
+}
+
+###
+DELETE {{api}}/discos/60a188050bffaf0aecdb1cf6
+
+###
+PUT {{api}}/discos/60a188a96aec85047cfec659
+Content-Type: application/json
+
+{
+    "title" : "Titulo2!"
+}
