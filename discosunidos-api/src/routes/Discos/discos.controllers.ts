@@ -11,14 +11,14 @@ export const createDisco : RequestHandler = async (req, res) => {
 
     const disco = new Disco(req.body);
     const savedDisco = await disco.save();
-    console.log(savedDisco);
+    
     res.json(savedDisco)
 }
 
 export const getDiscos : RequestHandler = async (req, res) => {
     try {
         const discos = await Disco.find();
-
+        console.log(discos)
          return res.json(discos)
     } catch (error) {
         res.json(error)

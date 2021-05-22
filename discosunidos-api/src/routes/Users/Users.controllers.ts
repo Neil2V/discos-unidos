@@ -14,6 +14,7 @@ export const login : RequestHandler = async (req, res) => {
     const token : string = jwt.sign({_id: user._id}, process.env.TOKEN_SECRET || 'TOKEN_TEST',{
         expiresIn: 60*60*24
     });
+    console.log(token);
     res.header('auth-token',token).json(user);
 }
 
