@@ -24,7 +24,7 @@ const discosSchema = new Schema({
 },{
     versionKey: false,// para q no aparezca v
     timestamps: true // para crear dos campos, cuando fue creadoy cuando fue actualizado
-})
+})//prueba rama - grupo1
 
 
 
